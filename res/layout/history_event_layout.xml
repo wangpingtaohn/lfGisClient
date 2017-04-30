@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_greed"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical" >
+
+        <Spinner
+            android:id="@+id/history_event_query_devices_select_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/spinner_bg_click"
+            android:gravity="center" />
+        <!--
+             <TextView
+            android:id="@+id/history_event_query_devices_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/str_history_event_controller"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        -->
+
+        <EditText
+            android:id="@+id/history_event_query_devices_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/history_event_query_devices_select_spinner"
+            android:background="@color/gold"
+            android:ems="8"
+            android:editable="false"
+            android:textColor="@color/black"
+            android:gravity="center" >
+        </EditText>
+
+        <Button
+            android:id="@+id/history_event_query_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/history_event_query_devices_edit"
+            android:background="@drawable/query_btn_click"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/str_alarm_info_query_btn" />
+
+        <Button
+            android:id="@+id/history_event_query_all_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/query_btn_click"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/str_alarm_info_query_all_btn" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:id="@+id/history_event_start_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/str_history_event_start_time"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/history_event_start_time_date_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/history_event_start_time_text"
+                android:background="@drawable/spinner_bg_click"
+                android:gravity="center"
+                android:hint="@string/str_select_date_hint"
+                android:paddingLeft="5dp"
+                android:paddingRight="25dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/history_event_start_time_time_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/history_event_start_time_date_edit"
+                android:background="@drawable/spinner_bg_click"
+                android:gravity="center"
+                android:hint="@string/str_select_time_hint"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/history_event_end_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/history_event_start_time_time_edit"
+                android:text="@string/str_history_event_end_time"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/history_event_end_time_date_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/history_event_end_time_text"
+                android:background="@drawable/spinner_bg_click"
+                android:gravity="center"
+                android:hint="@string/str_select_date_hint"
+                android:paddingLeft="5dp"
+                android:paddingRight="25dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/history_event_end_time_time_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/history_event_end_time_date_edit"
+                android:background="@drawable/spinner_bg_click"
+                android:gravity="center_vertical|left"
+                android:hint="@string/str_select_time_hint"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" >
+            </TextView>
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="#3f3f3f3f"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/str_time_text"
+            android:textColor="@color/blue_bg"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_name_text"
+            android:textColor="@color/blue_bg"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="操作人/报警类型"
+            android:textColor="@color/blue_bg"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/str_history_event_event"
+            android:textColor="@color/blue_bg"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <ListView
+                android:id="@+id/history_event_listview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#f1f1f1"
+                android:cacheColorHint="#00000000" >
+            </ListView>
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+# view AndroidManifest.xml #generated:33
+-keep class android.test.InstrumentationTestRunner { <init>(...); }
+
+# view res/layout/main_map.xml #generated:6
+-keep class com.baidu.mapapi.map.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class com.gis.client.activity.login.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.gis.client.activity.map.MainMapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class com.gis.client.activity.query.alarm.AlarmInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:84
+-keep class com.gis.client.activity.query.curve.CurveActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.gis.client.activity.query.curve.CurveResultAcitvity { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.gis.client.activity.query.history.HistoryEventActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class com.gis.client.activity.query.show.ShowInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class com.gis.client.activity.query.statistics.defend.DefendDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class com.gis.client.activity.query.statistics.defend.StatisticsDefendActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class com.gis.client.activity.query.statistics.gate.GateDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class com.gis.client.activity.query.statistics.gate.StatisticsGateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class com.gis.client.activity.query.tree.TreeLineActivity { <init>(...); }
+
+# view res/layout/tree_main_line_layout.xml #generated:55
+-keep class com.gis.client.activity.query.tree.TreeListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class com.gis.client.activity.query.tree.TreeResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:125
+-keep class com.gis.client.broadcast.CompletedBroadCast { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.gis.client.common.MyApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:131
+-keep class com.gis.client.service.MyService { <init>(...); }
+
+# onClick res/layout/main_map.xml #generated:35
+-keepclassmembers class * { *** onRefreshLineStatus(...); }
+
+# onClick res/layout/main_map.xml #generated:19
+-keepclassmembers class * { *** onSelectMode(...); }
+

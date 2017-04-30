@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#ff000000</color>
+    <color name="deep_black">#111111</color>
+    <color name="orange">#d25003</color>
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="gold">#b89766</color>
+    <color name="divider_gray">#3E3E3E</color>
+    <color name="dialog_bg_dark">#282828</color>
+    <color name="dialog_msg">#BCBCBC</color>
+    <color name="font_gray_dark">#ffaaaaaa</color>
+    <color name="half_black">#aa000000</color>
+    <color name="font_yellow">#ffffc000</color>
+    <color name="brown">#ff643f33</color>
+    <color name="font_black">#ff333333</color>
+    <color name="userinfo_red">#FFCC0000</color>
+    <color name="list_divider">#ffb5b5b5</color>
+    <color name="drop_down_bg">#ff343434</color>
+    <color name="gray_bg">#b1b1b1</color>
+    <color name="blue_bg">#0067c6</color>
+    <color name="blue">#0000ff</color>
+    <color name="list_greed">#edf4ed</color>
+    <color name="red">#7f00</color>
+    <color name="deep_gray">#666666</color>
+    
+    
+</resources>

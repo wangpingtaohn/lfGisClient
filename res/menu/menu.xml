@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_tree_item"
+        android:title="@string/str_menu_item_tree"/>
+    <item
+        android:id="@+id/menu_alarm_item"
+        android:title="@string/str_menu_item_alarm"/>
+    <item
+        android:id="@+id/menu_curve_item"
+        android:title="@string/str_menu_item_curve"/>
+    <item
+        android:id="@+id/menu_info_item"
+        android:title="@string/str_menu_item_info"/>
+    <item
+        android:id="@+id/menu_history_item"
+        android:title="@string/str_menu_item_history"/>
+    <item
+        android:id="@+id/menu_item_statistics_info"
+        android:title="@string/str_menu_item_statistics_info">
+        <menu>
+            <item
+                android:id="@+id/menu_item_statistics_open_close_switch"
+                android:title="@string/str_menu_item_statistics_open_close_switch"/>
+            <item
+                android:id="@+id/menu_item_statistics_defend"
+                android:title="@string/str_menu_item_statistics_defend"/>
+        </menu>
+    </item>
+
+</menu>

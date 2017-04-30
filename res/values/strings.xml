@@ -1,0 +1,120 @@
+<resources>
+
+     <!-- 共通 start-->
+    <string name="app_name">配网运行状态监控平台</string>
+    <string name="str_app_exception_exit">程序异常,软件即将退出!</string>
+    <string name="str_net_work_error">网络异常,请检查网络是否打开!</string>
+    <string name="str_net_work_time_out">网络连接超时,请稍后再试!</string>
+    <string name="str_net_work_server_error">服务器异常,请稍后再试!</string>
+    <string name="str_ok_btn">确定</string>
+    <string name="str_back_btn">返回</string>
+    <string name="str_cancel_btn">取消</string>
+    <string name="str_name_text">名称</string>
+    <string name="str_time_text">时间</string>
+    <string name="str_tip">提示</string>
+    <string name="str_select_date_hint">请选择日期</string>
+    <string name="str_select_time_hint">请选择时间</string>
+    <string name="str_tip_exit">确定要退出？</string>
+    <string name="str_not_result">没有找到您要查询的消息</string>
+    <string name="str_msg_loadding">信息加载中,请稍候...</string>
+    <string name="str_msg_query_ing">信息查询中,请稍候...</string>
+    <string name="str_double_click_exit_tip">再按一次退出！</string>
+ 	<!-- 共通 end-->
+    <!-- 登陆 start-->
+    <string name="str_login">登陆</string>
+    <string name="str_login_username">用户名</string>
+    <string name="str_login_username_tip">请输入账号</string>
+    <string name="str_login_password">密码</string>
+    <string name="str_login_password_tip">请输入密码</string>
+    <string name="str_login_exit">退出</string>
+    <string name="str_login_loading">正在登录...</string>
+    <string name="str_auto_login">记住密码</string>
+    <!-- 首页 end-->
+    <!-- 首页 start-->
+    <string name="str_power">有电</string>
+    <string name="str_not_power">没电</string>
+    <string name="str_map_select_dev">选择设备</string>
+    <string name="str_map_cancel_select_dev">取消选择</string>
+    <!-- 登陆 end-->
+    <!-- 菜单 start-->
+    <string name="str_menu_item_tree">树型查询</string>
+    <string name="str_menu_item_alarm">保护动作</string>
+    <string name="str_menu_item_curve">历史曲线</string>
+    <string name="str_menu_item_devices">选择设备</string>
+    <string name="str_menu_item_info">运行状态</string>
+    <string name="str_menu_item_history">历史事件</string>
+    <string name="str_menu_item_statistics_info">统计信息</string>
+    <string name="str_menu_item_statistics_defend">保护动作统计</string>
+    <string name="str_menu_item_statistics_open_close_switch">分合闸统计</string>
+    <!-- 菜单 end-->
+    <!-- 报警信息查询 start-->
+    <string name="str_alarm_info_query_devices_name">设备名称</string>
+    <string name="str_alarm_info_query_devices_select">选择设备</string>
+    <string name="str_alarm_info_query_alarm_type">报警类型</string>
+    <string name="str_alarm_info_query_form">报表</string>
+    <string name="str_alarm_info_query_btn">查询</string>
+    <string name="str_alarm_info_query_all_btn">查询全部</string>
+    <string name="str_alarm_info_query_belong_line_text">所属线路</string>
+    <string name="str_alarm_info_query_info_text">信息</string>
+    <!-- 报警信息查询 end-->
+    <!-- 历史事件查询 start-->
+    <string name="str_history_event_start_time">起始时间:</string>
+    <string name="str_history_event_end_time">结束时间:</string>
+    <string name="str_history_event_controller">操作人</string>
+    <string name="str_history_event_event">事件/所属线路,信息</string>
+    <string name="str_history_event_open">分闸</string>
+    <string name="str_history_event_close">合闸</string>
+    <string name="str_history_event_control_close">遥控关闭</string>
+    <string name="str_history_event_control_open">遥控开启</string>
+    <string name="str_history_event_0_defend_open">零序保护开启</string>
+    <string name="str_history_event_0_defend_close">零序保护关闭</string>
+    <string name="str_history_event_data_clear">采样数据清零</string>
+    <string name="str_history_event_software_reSet">软件复位</string>
+    <string name="str_history_event_send_control_command">发送遥控命令</string>
+    <string name="str_history_event_receive_control_command">接收遥控命令</string>
+    <string name="str_history_event_send_time_out">发送超时</string>
+    <string name="str_history_event_tip_input_name">请选择设备</string>
+    <string name="str_history_event_tip_select_time">请选择时间</string>
+    <!-- 树形查询 start-->
+    <string name="str_tree_query_params_name">字段名</string>
+    <string name="str_tree_query_params_value">字段值</string>
+    <!-- 树形查询 end-->
+    <!-- 信息查询 start-->
+    <string name="str_info_query_switch_status">开关状态</string>
+    <string name="str_info_query_save_status">储能状态</string>
+    <string name="str_info_query_voltage">电压</string>
+    <string name="str_info_query_al">A相电流</string>
+    <string name="str_info_query_bl">B相电流</string>
+    <string name="str_info_query_cl">C相电流</string>
+    <string name="str_info_query_0l">零序电流</string>
+    <string name="str_info_query_switch_close">合闸</string>
+    <string name="str_info_query_switch_open">分闸</string>
+    <string name="str_info_query_switch_unKnown">未知</string>
+    <string name="str_info_query_switch_stored">储能</string>
+    <string name="str_info_query_switch_unStored">未储能</string>
+    <string name="str_info_query_switch_unBicker">不闪  </string>
+    <string name="str_info_query_switch_bicker">闪  </string>
+    <!-- 信息查询 end-->
+    <!-- 曲线查询 start-->
+    <string name="str_curve_query_type_text">曲线类型</string>
+    <string name="str_curve_query_al_text">A流</string>
+    <string name="str_curve_query_bl_text">B流</string>
+    <string name="str_curve_query_cl_text">C流</string>
+    <string name="str_curve_query_dianliu_curve_text">电流曲线图</string>
+    <string name="str_curve_query_dianya_curve_text">电压曲线图</string>
+    <string name="str_curve_query_max_value_text">最大值:</string>
+    <string name="str_curve_query_min_value_text">最小值:</string>
+    <string name="str_curve_query_ave_value_text">平均值:</string>
+    <!-- 曲线查询 end-->
+    <!-- 分合闸统计 start-->
+    <string name="str_statistics_gate_type_text">类型:</string>
+    <!-- 分合闸统计 end-->
+    <!-- 上下拉刷新 start -->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <!-- 上下拉刷新 end -->
+</resources>

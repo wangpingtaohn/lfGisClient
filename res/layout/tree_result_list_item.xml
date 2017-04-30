@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tree_line_result_params_name"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical|right"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textColor="#CD3700"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tree_line_result_params_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+</LinearLayout>

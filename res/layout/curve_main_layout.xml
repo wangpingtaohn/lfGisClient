@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_divider"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/list_divider"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <Button
+                    android:id="@+id/curve_query_devices_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_click"
+                    android:text="@string/str_alarm_info_query_devices_select" />
+
+                <EditText
+                    android:id="@+id/curve_query_devices_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/curve_query_devices_select"
+                    android:background="@color/gold"
+                    android:editable="false"
+                    android:ems="8"
+                    android:gravity="center" >
+                </EditText>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/curve_start_time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/str_history_event_start_time"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/curve_start_time_date_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="25dp"
+                        android:background="@drawable/spinner_bg_click"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/str_select_date_hint"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/curve_start_time_time_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_bg_click"
+                        android:gravity="center"
+                        android:hint="@string/str_select_time_hint"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/curve_end_time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/str_history_event_end_time"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/curve_end_time_date_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="5dp"
+                        android:background="@drawable/spinner_bg_click"
+                        android:gravity="center"
+                        android:hint="@string/str_select_date_hint"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/curve_end_time_time_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_bg_click"
+                        android:gravity="center"
+                        android:hint="@string/str_select_time_hint"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#96DCC7"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="@string/str_curve_query_type_text" />
+
+        <Spinner
+            android:id="@+id/curve_query_type_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:background="@drawable/spinner_bg_click"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:id="@+id/curve_query_al_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/str_curve_query_al_text"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/curve_query_bl_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/str_curve_query_bl_text"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/curve_query_cl_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/str_curve_query_cl_text"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/curve_query_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/query_btn_click"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="@string/str_alarm_info_query_btn" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/statistics_defend_list_item_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="horizontal"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textColor="#CD3700"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8" />
+
+    <TextView
+        android:id="@+id/statistics_defend_list_item_guo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8" />
+
+    <TextView
+        android:id="@+id/statistics_defend_list_item_su_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8" />
+
+    <TextView
+        android:id="@+id/statistics_defend_list_item_zero_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+</LinearLayout>

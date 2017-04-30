@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_greed"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/list_divider"
+        android:gravity="center_vertical" >
+
+        <!-- <TextView
+            android:id="@+id/alarm_info_query_devices_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/str_alarm_info_query_devices_name"
+            android:textColor="@color/black"
+            android:textSize="18sp" /> -->
+            <Spinner
+            android:id="@+id/alarm_info_query_devices_select_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/spinner_bg_click"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/alarm_info_query_devices_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/alarm_info_query_devices_select_spinner"
+            android:background="@color/gold"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="center" >
+        </EditText>
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/alarm_info_query_devices_select"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/alarm_info_query_devices_edit"
+            android:background="@drawable/btn_click"
+            android:text="@string/str_alarm_info_query_devices_select" />
+
+        <Button
+            android:id="@+id/alarm_info_query_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/query_btn_click"
+            android:text="@string/str_alarm_info_query_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/list_divider"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/alarm_info_query_alarm_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/str_alarm_info_query_alarm_type"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/alarm_info_query_alarm_type_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:layout_toRightOf="@id/alarm_info_query_alarm_type"
+            android:background="@drawable/spinner_bg_click"
+            android:ems="10" >
+        </Spinner>
+
+        <Button
+            android:id="@+id/alarm_info_query_all_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/query_btn_click"
+            android:text="@string/str_alarm_info_query_all_btn" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#96DCC7"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/str_time_text"
+            android:textColor="@color/blue_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_name_text"
+            android:textColor="@color/blue_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_alarm_info_query_alarm_type"
+            android:textColor="@color/blue_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/str_alarm_info_query_belong_line_text"
+            android:textColor="@color/blue_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/str_alarm_info_query_info_text"
+            android:textColor="@color/blue_bg" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <ListView
+                android:id="@+id/alarm_info_listview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="#f1f1f1"
+                android:cacheColorHint="#00000000" >
+            </ListView>
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

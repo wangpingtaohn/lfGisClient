@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 开关start -->
+	<string-array name="switch_value_array">
+		<item>ID</item>
+		<item>FID</item>
+		<item>开关名称</item>
+		<item>编号</item>
+		<item>板号</item>
+		<item>描述</item>
+		<item>型号</item>
+		<item>厂家</item>
+		<item>额定容率</item>
+		<item>中继板号</item>
+		<item>主线板号</item>
+		<item>经度</item>
+		<item>纬度</item>
+		<item>机构型号</item>
+		<item>出厂编号</item>
+		<item>额定电压</item>
+		<item>过流值</item>
+		<item>速流值</item>
+		<item>整定时间</item>
+		<item>角度</item>
+		<item>生产日期</item>
+	</string-array>
+	<!-- 开关end -->
+    <!-- 电压start -->
+	<string-array name="voltage_value_array">
+		<item>ID</item>
+		<item>变压器名称</item>
+		<item>编号</item>
+		<item>板号</item>
+		<item>描述</item>
+		<item>型号</item>
+		<item>厂家</item>
+		<item>额定容率</item>
+		<item>中继板号</item>
+		<item>主线板号</item>
+		<item>经度</item>
+		<item>纬度</item>
+	</string-array>
+	<!-- 电压end -->
+	<!-- 线路start -->
+	<string-array name="line_value_array">
+		<item>线路编号</item>
+		<item>线路名称</item>
+		<item>编号</item>
+		<item>主线编号</item>
+		<item>是否有电</item>
+	</string-array>
+	<!-- 线路end -->
+	<!-- 报警查询 start -->
+	<string-array name="alarm_query_type_array">
+		<item>过流</item>
+		<item>速断</item>
+		<item>零序保护</item>
+		<item>零序异常</item>
+	</string-array>
+	<!-- 报警查询 end -->
+	<!-- 历史查询 start -->
+	<string-array name="history_query_type_array">
+		<item>过流</item>
+		<item>速断</item>
+		<item>零序保护</item>
+		<item>正常</item>
+		<item>零序异常</item>
+	</string-array>
+	<!-- 历史查询 end -->
+	
+	<!-- 曲线查询 start -->
+	<string-array name="curve_query_type_array">
+		<item>电流</item>
+		<item>电压</item>
+	</string-array>
+	<!-- 曲线查询 end -->
+	<!-- 分合闸统计 start -->
+	<string-array name="statistics_gate_sel_devices_array">
+		<item>全部设备</item>
+		<item>选择设备</item>
+	</string-array>
+	<string-array name="statistics_gate_type_array">
+		<item>全部</item>
+		<item>分闸</item>
+		<item>合闸</item>
+	</string-array>
+	<!-- 分合闸统计 end -->
+</resources>
